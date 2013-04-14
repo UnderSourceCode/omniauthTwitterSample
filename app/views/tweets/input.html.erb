@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="clearfix">
+    <label for="textarea">Enter a message:</label>
+    <div class="form-action">
+      <%= form_tag({:action => "update"}, {:method => "post"}) do %>
+        <%= text_area_tag(:message) %><br>
+        <%= submit_tag("tweet" , :class => "btn btn-primary") %>
+      <% end %>
+    </div>
+  </div>
+</div>
